@@ -1,6 +1,6 @@
 # sample board api server
 
-```
+```bash
 # get board list
 ## method: GET
 /boards/
@@ -9,6 +9,10 @@
 ## method: POST
 /boards/
 
+json
+title: string
+content: string
+
 # detail post
 ## method: GET
 /boards/<pk>/
@@ -16,6 +20,10 @@
 # update post
 ## method: PUT
 /boards/<pk>/
+
+json
+title: string
+content: string
 
 # delete post
 ### method: Delete
