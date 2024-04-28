@@ -36,4 +36,4 @@ def board_detail(request, pk):
         return JsonResponse(serializer.errors, status=400)
     elif request.method == 'DELETE':
         obj.delete()
-        return JsonResponse({'result': 'success'}, status=204)
+        return JsonResponse({'result': 'success'}, status=200)
